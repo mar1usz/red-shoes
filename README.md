@@ -90,10 +90,8 @@ GET api/brands/1/shoes
 ## Build and run:
 ### PostgreSQL:
 - specify the username, password, host and port in config/database.yml
-- `rails db:create`
-- `rails db:migrate`
-- `rails db:seed`
-### Rails:
+- `rails db:create`, `rails db:migrate`, `rails db:seed`
+### Rails / Browser:
 - `rails server`
 
 ## Credits:
