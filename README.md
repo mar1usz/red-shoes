@@ -98,4 +98,4 @@ GET api/brands/1/shoes
 
 ## Credits:
 - Fast JSON API by https://github.com/Netflix/fast_jsonapi (Apache-2.0 license)
-- restful-jsonapi by https://github.com/Netflix/restful-jsonapi (MIT License)
+- Restful::Jsonapi by https://github.com/Netflix/restful-jsonapi (MIT License)
