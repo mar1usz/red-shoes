@@ -33,3 +33,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Fast JSON API
+gem 'fast_jsonapi'
+gem 'restful-jsonapi', git: 'https://github.com/acceptly/restful-jsonapi', branch: 'support-rails-6'
