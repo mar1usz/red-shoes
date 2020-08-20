@@ -1,24 +1,101 @@
-# README
+# Red Shoes
+A database-backed [JSON:API](http://jsonapi.org/) in Ruby and Rails:
+```HTTP
+GET api/brands/1
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```JSON
+{
+    "data": {
+        "id": "1",
+        "type": "brand",
+        "attributes": {
+            "name": "Nike"
+        },
+        "relationships": {
+            "shoes": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "shoe"
+                    },
+                    {
+                        "id": "2",
+                        "type": "shoe"
+                    },
+                    {
+                        "id": "3",
+                        "type": "shoe"
+                    }
+                ]
+            }
+        }
+    }
+}
+```
 
-Things you may want to cover:
+```HTTP
+GET api/brands/1/shoes
+```
 
-* Ruby version
+```JavaScript
+{
+    "data": [
+        {
+            "id": "1",
+            "type": "shoe",
+            "attributes": {
+                "brand_id": 1,
+                "name": "Air Jordan I OG",
+                "color": "Black / Red",
+                "year": 1985
+            },
+            "relationships": {
+                "brand": {
+                    "data": {
+                        "id": "1",
+                        "type": "brand"
+                    }
+                }
+            }
+        },
+        {
+            "id": "2",
+            "type": "shoe",
+            "attributes": {
+                "brand_id": 1,
+                "name": "Air Jordan I OG",
+                "color": "Black / Royal Blue",
+                "year": 1985
+            },
+            "relationships": {
+                "brand": {
+                    "data": {
+                        "id": "1",
+                        "type": "brand"
+                    }
+                }
+            }
+        },
+        {...}
+    ]
+}
+```
 
-* System dependencies
+## Prerequisites:
+- Ruby 2.7.1
+- Rails 6
+- PostgreSQL 12
 
-* Configuration
+## Build and run:
+### PostgreSQL:
+- specify the username, password, host and port in config/database.yml
+- `rails db:create`
+- `rails db:migrate`
+- `rails db:seed`
+### Rails:
+- `rails server`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Credits:
+- fast_jsonapi by https://github.com/Netflix/fast_jsonapi (Apache-2.0 license)
+- restful-jsonapi by https://github.com/Netflix/restful-jsonapi (MIT License)

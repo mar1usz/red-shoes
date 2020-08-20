@@ -37,3 +37,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Fast JSON API
 gem 'fast_jsonapi'
 gem 'restful-jsonapi', git: 'https://github.com/acceptly/restful-jsonapi', branch: 'support-rails-6'
+
+# Launchy
+gem 'launchy'
