@@ -3,7 +3,7 @@ class Api::ShoesController < ApplicationController
 
   # GET /brands/1/shoes
   def index
-    @shoes = Shoe.all.order(:id)
+    @shoes = Shoe.all
     render json: ShoeSerializer.new(@shoes)
   end
 

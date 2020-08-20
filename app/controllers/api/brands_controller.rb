@@ -3,7 +3,7 @@ class Api::BrandsController < ApplicationController
 
   # GET /brands
   def index
-    @brands = Brand.all.order(:id)
+    @brands = Brand.all
     render json: BrandSerializer.new(@brands)
   end
 
