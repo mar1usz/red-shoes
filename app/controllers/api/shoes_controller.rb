@@ -1,18 +1,18 @@
 class Api::ShoesController < ApplicationController
   before_action :set_shoe, only: [:show, :update, :destroy]
 
-  # GET /brands/1/shoes
+  # GET api/brands/1/shoes
   def index
     @shoes = Shoe.all
     render json: ShoeSerializer.new(@shoes)
   end
 
-  # GET /brands/1/shoes/2
+  # GET api/brands/1/shoes/2
   def show
     render json: ShoeSerializer.new(@shoe)
   end
 
-  # POST /brands/1/shoes
+  # POST api/brands/1/shoes
   def create
     @shoe = Shoe.new(shoe_params_jsonapi)
     if @shoe.save
@@ -22,7 +22,7 @@ class Api::ShoesController < ApplicationController
     end
   end
 
-  # PATCH /brands/1/shoes/2
+  # PATCH api/brands/1/shoes/2
   def update
     if @shoe.update(shoe_params_jsonapi)
       render json: ShoeSerializer.new(@shoe)
@@ -31,7 +31,7 @@ class Api::ShoesController < ApplicationController
     end
   end
 
-  # DELETE /shoes/1
+  # DELETE api/brands/1/shoes/2
   def destroy
     @shoe.destroy
   end

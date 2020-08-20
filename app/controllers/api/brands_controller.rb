@@ -1,18 +1,18 @@
 class Api::BrandsController < ApplicationController
   before_action :set_brand, only: [:show, :update, :destroy]
 
-  # GET /brands
+  # GET api/brands
   def index
     @brands = Brand.all
     render json: BrandSerializer.new(@brands)
   end
 
-  # GET /brands/1
+  # GET api/brands/1
   def show
     render json: BrandSerializer.new(@brand)
   end
 
-  # POST /brands
+  # POST api/brands
   def create
     @brand = Brand.new(brand_params_jsonapi)
     if @brand.save
@@ -22,7 +22,7 @@ class Api::BrandsController < ApplicationController
     end
   end
 
-  # PATCH /brands/1
+  # PATCH api/brands/1
   def update
     if @brand.update(brand_params_jsonapi)
       render json: BrandSerializer.new(@brand)
@@ -31,7 +31,7 @@ class Api::BrandsController < ApplicationController
     end
   end
 
-  # DELETE /brands/1
+  # DELETE api/brands/1
   def destroy
     @brand.destroy
   end
