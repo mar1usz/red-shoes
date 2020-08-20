@@ -97,5 +97,5 @@ GET api/brands/1/shoes
 - `rails server`
 
 ## Credits:
-- fast_jsonapi by https://github.com/Netflix/fast_jsonapi (Apache-2.0 license)
+- Fast JSON API by https://github.com/Netflix/fast_jsonapi (Apache-2.0 license)
 - restful-jsonapi by https://github.com/Netflix/restful-jsonapi (MIT License)
