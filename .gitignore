@@ -1,3 +1,4 @@
+### Rails ###
 *.rbc
 capybara-*.html
 .rspec
@@ -67,3 +68,14 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 /public/uploads
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
