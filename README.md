@@ -93,9 +93,10 @@ GET api/brands/1/shoes
 - `rails db:create`
 - `rails db:migrate`
 - `rails db:seed`
-### Rails / Browser:
+### Rails / Launchy:
 - `rails server`
 
 ## Credits:
+- Rails Scaffolding by https://github.com/rails/rails (MIT license)
 - fast_jsonapi by https://github.com/Netflix/fast_jsonapi (Apache-2.0 license)
 - restful-jsonapi by https://github.com/Netflix/restful-jsonapi (MIT license)
