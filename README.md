@@ -4,7 +4,7 @@ A database-backed [JSON:API](http://jsonapi.org/) in Ruby and Rails:
 GET api/brands/1
 ```
 
-```JSON
+```JavaScript
 {
     "data": {
         "id": "1",
