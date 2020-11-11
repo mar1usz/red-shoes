@@ -1,5 +1,5 @@
 # Red Shoes
-A database-backed [JSON:API](http://jsonapi.org/) in Ruby and Rails:
+A database-backed [JSON:API](http://jsonapi.org) in Ruby and Rails:
 ```HTTP
 GET api/brands/1
 ```
