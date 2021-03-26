@@ -94,7 +94,6 @@ GET api/brands/1/shoes
 - `rails server`
 
 ## Credits:
-- Rails scaffold generator by https://github.com/rails/rails (MIT license)
-- Active Record migrations by https://github.com/rails/rails/tree/main/activerecord (MIT license)
+- Rails scaffold generator and Active Record migrations by https://github.com/rails/rails (MIT license)
 - fast_jsonapi by https://rubygems.org/gems/fast_jsonapi (Apache-2.0 license)
 - restful-jsonapi by https://rubygems.org/gems/restful-jsonapi (MIT license)
