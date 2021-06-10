@@ -1,5 +1,4 @@
 ActiveRecord::Schema.define(version: 2020_08_20_102211) do
-
   enable_extension "plpgsql"
 
   create_table "brands", force: :cascade do |t|
