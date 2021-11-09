@@ -1,6 +1,6 @@
 # Red Shoes
 A database-backed [JSON:API](http://jsonapi.org) in Ruby and Rails:
-```HTTP
+```JavaScript
 GET api/brands/1
 ```
 
@@ -31,7 +31,7 @@ GET api/brands/1
 }
 ```
 
-```HTTP
+```JavaScript
 GET api/brands/1/shoes
 ```
 
