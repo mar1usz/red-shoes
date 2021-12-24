@@ -1,5 +1,5 @@
 # Red Shoes
-Database-backed JSON:API in Ruby and Rails:
+A database-backed JSON:API in Ruby and Rails:
 ```JavaScript
 GET api/brands/1
 ```
